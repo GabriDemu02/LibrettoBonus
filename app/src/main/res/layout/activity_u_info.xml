@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="15sp"
+    android:paddingRight="15sp"
+    android:orientation="vertical"
+    android:background="@drawable/bg_color_app">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:paddingVertical="5dp"
+        android:paddingHorizontal="5dp"
+        android:background="@drawable/bg_color_app_corner"
+        android:gravity="start">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:layout_marginHorizontal="15dp"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <TextView
+            android:id="@+id/titolo_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Area Personale"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="20dp"
+        android:background="@drawable/bg_color_app_corner">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp"
+            android:paddingVertical="5dp"
+            android:paddingHorizontal="15dp"
+            android:background="@drawable/bg_color_text">
+
+                <TextView
+                    android:id="@+id/user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="10dp"
+                    android:background="@drawable/bg_color_text2"
+                    android:paddingHorizontal="10dp"
+                    android:gravity="center"
+                    android:textSize="40sp"
+                    android:text="@string/username"
+                    android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/nm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nome"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="20dp"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="2dp"
+            android:background="@drawable/bg_color_edit_text"/>
+
+        <TextView
+            android:id="@+id/cm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cognome"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="20dp"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="2dp"
+            android:background="@drawable/bg_color_edit_text"/>
+
+        <TextView
+            android:id="@+id/data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/data_di_nascit"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="2dp"
+            android:background="@drawable/bg_color_edit_text"/>
+
+    </LinearLayout>
+
+
+    <android.widget.Button
+        android:id="@+id/btnlogout"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:text="@string/logout"
+        android:background="@drawable/bg_color_red"
+        android:textStyle="bold"
+        android:textSize="30sp" />
+
+</LinearLayout>

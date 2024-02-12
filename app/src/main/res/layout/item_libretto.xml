@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_color_bar"
+    android:layout_marginVertical="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    tools:context=".LibrettoActivity">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="5dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:layout_marginEnd="5dp"
+            android:gravity="start"
+            android:text="12"
+            android:textSize="50sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="0dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="2dp"
+                android:text="Nome"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="23"
+                    android:textSize="25sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/del_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingVertical="5dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/baseline_delete_24"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:focusable="true"/>
+
+
+</LinearLayout>
